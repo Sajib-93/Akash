@@ -23,7 +23,7 @@ a {
 
 header {
     padding: 20px 0;
-    /* background: #49494936; */
+    background: #1C2836;
 }
 
 header i {
@@ -34,6 +34,34 @@ header h2 i {
     padding-right: 10PX;
 }
 
+header h2 a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff !important;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+header h2 a:hover{
+    color: #17469E !important;
+}
+header h3 a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff !important;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+header h3 a:hover{
+    color: #17469E !important;
+}
 header h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -56,7 +84,7 @@ header h3 span {
 
 /* ============================================ */
 
-.menufixed{
+.menufixed2 {
     position: fixed;
     background: #272E3A;
     color: #000;
@@ -68,6 +96,21 @@ header h3 span {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 9999;
+}
+.menufixed {
+    position: fixed;
+    background: rgba(227, 228, 227, 0.959);
+    color: #fff;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    z-index: 9999;
 }
 
 .common-button {
@@ -75,7 +118,7 @@ header h3 span {
     width: 40px;
     height: 40px;
     line-height: 40px;
-    background: #272E3A;
+    background: #17469E;
     font-size: 16px;
     color: #fff;
     position: fixed;
@@ -112,12 +155,69 @@ nav ul li {
     display: inline-block;
     padding-left: 20px;
 }
+.btn-secondary {
+    color: #000;
+    background-color: transparent;
+    border-color: #6c757d;
+}
+.btn-check:focus+.btn-secondary, .btn-secondary:focus {
+    color: #000;
+    background-color: transparent;
+    border-color: #565e64;
+    box-shadow: none;
+}
+.btn-secondary:hover {
+    color: #000;
+    background-color: transparent;
+    border-color: none;
+}
+.btn-check:active+.btn-secondary, .btn-check:checked+.btn-secondary, .btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
+    color: #000;
+    background-color: transparent;
+    border-color: none;
+}
+.btn-check:active+.btn-secondary:focus, .btn-check:checked+.btn-secondary:focus, .btn-secondary.active:focus, .btn-secondary:active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0;
+}
+
+nav .nav-item .dropdown .btn-secondary .show{
+    border: 0;
+}
+nav .nav-item .dropdown .btn-secondary{
+    border: 0;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333 !important;
+    transition: 0.4s !important;
+    -webkit-transition: 0.4s !important;
+    -moz-transition: 0.4s !important;
+    -ms-transition: 0.4s !important;
+    -o-transition: 0.4s !important;
+}
+nav .nav-item .dropdown .btn-secondary:hover{
+    color: #17469E !important;
+}
+nav .nav-item .dropdown ul li a{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333 !important;
+    transition: 0.4s !important;
+    -webkit-transition: 0.4s !important;
+    -moz-transition: 0.4s !important;
+    -ms-transition: 0.4s !important;
+    -o-transition: 0.4s !important;
+}
+nav .nav-item .dropdown ul li a:hover{
+    color: #17469E !important;
+}
 
 nav ul li a {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    color: #fff !important;
+    color: #333333 !important;
     transition: 0.4s !important;
     -webkit-transition: 0.4s !important;
     -moz-transition: 0.4s !important;
@@ -126,63 +226,167 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #000 !important;
+    color: #17469E !important;
 }
 
 /* ====================== */
 
-#banner {
-    background: url(../images/banner.jpg) no-repeat center;
+
+#banner-part .banner-main .banner{
+    background: url(../images/banner-3.jpg) no-repeat center;
     background-size: cover;
-    /* padding: 100px 0; */
+    position: relative;
+    height: 600px;
+    padding: 100px 0;
+}
+#banner-part .banner-main .banner-2 {
+    background: url(../images/banner-4.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#banner-part .banner-main .banner-3 {
+    background: url(../images/banner-2.jpg) no-repeat center;
+    background-size: cover;
+}
+#banner-part .banner-main .banner .overlay{
+    padding: 100px 0;
     position: absolute;
+    content: '';
     top: 0;
     left: 0;
     width: 100%;
-    z-index: -666;
-}
-
-#banner .overlay {
-    padding: 100px 0;
-    padding-top: 200px;
-    width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.712);
+    background: rgba(0, 0, 0, 0.61);
 }
 
-#banner .text {
+#banner-part .banner-main .banner .text{
+    z-index: 9999;
     text-align: center;
 }
 
-#banner .text h1 {
+
+
+#banner-part .banner .text h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 70px;
+    font-size: 59px;
     font-weight: 700;
     color: #fff;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
-#banner .text h2 {
+#banner-part .slick-active .text h1 {
+    animation: left 1s;
+    -webkit-animation: left 1s;
+}
+
+@keyframes left {
+    from {
+        left: -100px;
+    }
+
+    to {
+        top: 200px;
+    }
+}
+
+
+#banner-part .banner .text h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
     font-weight: 700;
     color: #fff;
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+#banner-part .slick-active .text h2 {
+    animation: right 1s;
+    -webkit-animation: right 1s;
 }
 
-#banner .text p {
+@keyframes right {
+    from {
+        left: 100px;
+    }
+
+    to {
+        top: 270px;
+    }
+}
+
+
+#banner-part .banner .text p {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 300;
     color: #fff;
+    position: absolute;
+    top: 360px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+#banner-part .slick-active .text p {
+    animation: bottom 1s;
+    -webkit-animation: bottom 1s;
 }
 
-#banner .text h3 {
+@keyframes bottom {
+    from {
+        top: 420px;
+    }
+
+    to {
+        top: 360px;
+    }
+}
+
+#banner-part .banner .text h3 {
     font-family: 'Dancing Script', cursive;
     font-size: 42px;
     font-weight: 300;
     color: #fff;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+#banner-part .slick-active .text h3 {
+    animation: top 1s;
+    -webkit-animation: top 1s;
 }
 
-#banner .text span {
+@keyframes top {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 80px;
+    }
+}
+
+
+#banner-part .bannner .text span {
     font-family: 'Dancing Script', cursive;
     font-size: 24px;
     font-weight: 300;
@@ -190,12 +394,15 @@ nav ul li a:hover {
     margin-top: -5px;
 }
 
+
+
+
 /* ================================= */
 
 #welcome {
     /* margin: 100px 0; */
-    margin-top: 530px;
-    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 #welcome .common-head {
@@ -277,14 +484,20 @@ nav ul li a:hover {
 }
 
 #service {
-    margin: 100px 0;
+    margin: 70px 0;
 }
 
 #service .item {
-    border: 1px solid #bbb5b5;
-    padding: 15px 15px 0 15px;
+    /* border: 1px solid #bbb5b5; */
+    padding: 15px 15px 15px 15px;
     margin-top: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
+
 
 #service .item h2 {
     font-family: 'Roboto', sans-serif;
@@ -311,9 +524,10 @@ nav ul li a:hover {
     margin-bottom: 100px;
 }
 
-#team{
+#team {
     padding-top: 30px;
 }
+
 #team .item {
     text-align: center;
     border: 1px solid #dfdada;
@@ -369,28 +583,34 @@ nav ul li a:hover {
 #gallery {
     margin-bottom: 70px;
 }
-#gallery p{
+
+#gallery p {
     padding-bottom: 20px;
 }
-#gallery img{
+
+#gallery img {
     width: 280px;
     padding-bottom: 7px;
     height: 200px;
 }
+
 /* ======================================= */
 
 
-#contact{
+#contact {
     margin-bottom: 80px;
 }
-#contact P{
+
+#contact P {
     padding-bottom: 20px;
 }
-#contact .item{
+
+#contact .item {
     padding: 10px;
     background: #17469E;
 }
-#contact .item h2{
+
+#contact .item h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: 700;
@@ -399,7 +619,7 @@ nav ul li a:hover {
     padding-left: 20px;
 }
 
-#contact .item p{
+#contact .item p {
     padding-left: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -407,11 +627,13 @@ nav ul li a:hover {
     color: rgb(236, 232, 232);
     margin: 0;
 }
-#contact .item .icons{
+
+#contact .item .icons {
 
     margin-left: 20px;
     padding-bottom: 20px;
 }
+
 #contact .item i {
     width: 40px;
     height: 40px;
@@ -439,22 +661,40 @@ nav ul li a:hover {
 }
 
 
-#contact .map{
+#contact .map {
     width: 100%;
     height: 433px;
 }
+
 /* ========================================== */
 
 
-#copy{
+#copy {
     padding-top: 20px;
     padding-bottom: 10px;
     background: #333333;
 }
-#copy p{
+
+#copy p {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: rgb(236, 232, 232);
     /* text-align: center; */
+}
+/* ============================================================ */
+/* ============================================================ */
+/* ============================================================ */
+/* ============================================================ */
+/* ============================================================ */
+/* ============================================================ */
+/* ============================================================ */
+/* ============================================================ */
+/* ============================================================ */
+/* ============================================================ */
+/* ============================================================ */
+
+
+#project{
+    padding: 100px 0;
 }

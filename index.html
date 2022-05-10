@@ -13,23 +13,27 @@
     <!--  -->
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-    
-    <header>
+
+    <header class="menu2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2><i class="fa-solid fa-phone"></i> Call Us: 01705184763, 01970063316 </h2>
+                    <h2><i class="fa-solid fa-phone"></i> Call Us: 
+                        <a href="tel:01705184763" >01705184763</a>, 
+                        <a href="tel:01970063316" >01970063316</a> 
+                    </h2>
                 </div>
                 <div class="col-lg-6">
                     <h3>
-                        <i class="fa-solid fa-location-dot"></i> <span>HM Siddique Mansion 55/A Purana Paltan, Dhaka
-                            1000</span>
+                        <i class="fa-solid fa-envelope"></i> <span><a href="mailto:famoussbd@gmail.com" >famoussbd@gmail.com</a></span>
                     </h3>
 
                 </div>
@@ -46,7 +50,7 @@
 
     <nav class="navbar navbar-expand-lg menu">
         <div class="container">
-            <a class="navbar-brand" href="#"> <img src="images/logo-2.png" alt="logo"></a>
+            <a class="navbar-brand" href="#"> <img src="images/logo-main.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -64,6 +68,19 @@
                         <a class="nav-link" href="#service">Services</a>
                     </li>
                     <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="project.html">Completed Project</a></li>
+                              <li><a class="dropdown-item" href="project.html">On Going Project</a></li>
+                              <li><a class="dropdown-item" href="project.html">Approved Plan</a></li>
+                              <li><a class="dropdown-item" href="project.html">Master Plan</a></li>
+                            </ul>
+                          </div>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
@@ -79,26 +96,64 @@
     </nav>
     <!-- nav start -->
 
-    <!-- banner strart -->
-    <section id="banner">
-        <div class="overlay">
-            <div class="container">
-                <div class="banner-main">
-                    <div class="text">
-                        <h3>Construction Planning..<br>
-                            <span>What You Can Imagine We Can Create !</span>
-                        </h3>
-                        <h1> Famous Steel Building</h1>
-                        <h2>Engineering Service</h2>
-                        <p>Steel Structure: Project Plan, Design, Drawing & Architect Plan (3D & Master plan, Steel <br>
-                            building & Civil Building) soil tests, digital surveys and project consultancy and
-                            construction Steel and Civil Works.</p>
+
+
+
+    <section id="banner-part">
+        <div class="banner-main">
+            <div class="banner banner-1">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="text">
+                            <h3>Construction Planning..<br>
+                                <span>What You Can Imagine We Can Create !</span>
+                            </h3>
+                            <h1> Famous Steel Building</h1>
+                            <h2>Engineering Service</h2>
+                            <p>Steel Structure: Project Plan, Design, Drawing & Architect Plan (3D & Master plan, Steel <br>
+                                building & Civil Building) soil tests, digital surveys and <br> project consultancy and
+                                construction Steel and Civil Works.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner banner-2">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="text">
+                            <h3>Construction Planning..<br>
+                                <span>What You Can Imagine We Can Create !</span>
+                            </h3>
+                            <h1> Famous Steel Building</h1>
+                            <h2>Engineering Service</h2>
+                            <p>Steel Structure: Project Plan, Design, Drawing & Architect Plan (3D & Master plan, Steel <br>
+                                building & Civil Building) soil tests, digital surveys and <br> project consultancy and
+                                construction Steel and Civil Works.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner banner-3">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="text">
+                            <h3>Construction Planning..<br>
+                                <span>What You Can Imagine We Can Create !</span>
+                            </h3>
+                            <h1> Famous Steel Building</h1>
+                            <h2>Engineering Service</h2>
+                            <p>Steel Structure: Project Plan, Design, Drawing & Architect Plan (3D & Master plan, Steel <br>
+                                building & Civil Building) soil tests, digital surveys and <br> project consultancy and
+                                construction Steel and Civil Works.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- banner End-->
+
+
+
 
 
     <!-- About Start -->
@@ -110,7 +165,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <img src="images/217390858_106291741731532_3419146749257948241_n.png" alt="img">
+                    <img src="images/logo-main.png" alt="img">
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <h2>Welcome to, <br> <span>Famous Steel Building</span></h2>
@@ -133,7 +188,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <div class="item">
+                    <div class="item shadow" data-aos="fade-right" >
                         <img src="images/service-1.jpg" class="w-100" alt="service">
                         <div class="text">
                             <h2>Project Plan</h2>
@@ -143,8 +198,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="item">
+                <div class="col-lg-4 col-md-4" data-aos="zoom-in">
+                    <div class="item shadow">
                         <img src="images/service-2.jpg" class="w-100" alt="service">
                         <div class="text">
                             <h2>Steel Structure</h2>
@@ -154,8 +209,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="item">
+                <div class="col-lg-4 col-md-4" data-aos="fade-left">
+                    <div class="item shadow">
                         <img src="images/service-3.jpg" class="w-100" alt="service">
                         <div class="text">
                             <h2>Architect Plan</h2>
@@ -165,8 +220,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="item">
+                <div class="col-lg-4 col-md-4" data-aos="fade-right">
+                    <div class="item shadow">
                         <img src="images/service-4.jpg" class="w-100" alt="service">
                         <div class="text">
                             <h2>3D & Master Plan</h2>
@@ -175,8 +230,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="item">
+                <div class="col-lg-4 col-md-4" data-aos="zoom-in">
+                    <div class="item shadow">
                         <img src="images/service-5.jpg" class="w-100" alt="service">
                         <div class="text">
                             <h2>Soil Tests</h2>
@@ -185,8 +240,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="item">
+                <div class="col-lg-4 col-md-4" data-aos="fade-left">
+                    <div class="item shadow">
                         <img src="images/service-6.jpg" class="w-100" alt="service">
                         <div class="text">
                             <h2>digital surveys</h2>
@@ -195,8 +250,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="item">
+                <div class="col-lg-4 col-md-4" data-aos="fade-right">
+                    <div class="item shadow">
                         <img src="images/service-7.jpg" class="w-100" alt="service">
                         <div class="text">
                             <h2>Workshop & Warehouse</h2>
@@ -205,8 +260,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="item">
+                <div class="col-lg-4 col-md-4" data-aos="zoom-in">
+                    <div class="item shadow">
                         <img src="images/service-8.jpg" class="w-100" alt="service">
                         <div class="text">
                             <h2>Farm Buildings</h2>
@@ -215,8 +270,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="item">
+                <div class="col-lg-4 col-md-4" data-aos="fade-left">
+                    <div class="item shadow">
                         <img src="images/service-9.jpg" class="w-100" alt="service">
                         <div class="text">
                             <h2>Commercial Buildings</h2>
@@ -240,10 +295,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <div class="item">
+                    <div class="item shadow" data-aos="fade-right">
                         <img src="images/team-1.jpg" class="w-100" alt="team">
                         <div class="text">
-                            <h3>Sobuz Islam Akash</h3>
+                            <h3>Engr: Md. Sobuz Islam Akash</h3>
                             <p>Engineer at Famous Steel Building</p>
                             <div class="icons">
                                 <i class="fa-brands fa-facebook"></i>
@@ -255,10 +310,10 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <div class="item">
+                    <div class="item shadow" data-aos="zoom-in">
                         <img src="images/team-2.jpg" class="w-100" alt="team">
                         <div class="text">
-                            <h3>Sobuz Islam Akash</h3>
+                            <h3>Engr: Md. Moshiur Rahman</h3>
                             <p>Engineer at Famous Steel Building</p>
                             <div class="icons">
                                 <i class="fa-brands fa-facebook"></i>
@@ -270,7 +325,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <div class="item">
+                    <div class="item shadow" data-aos="fade-left">
                         <img src="images/team-3.jpg" class="w-100" alt="team">
                         <div class="text">
                             <h3>Sobuz Islam Akash</h3>
@@ -301,7 +356,7 @@
                 <div class="col-lg-3 col-md-6">
                     <img src="images/gellary-1.jpg" alt="gallery">
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-in">
                     <img src="images/gellary-2.jpg" alt="gallery">
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -374,7 +429,7 @@
                 <div class="col-lg-6">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.468245365548!2d90.4096896142965!3d23.730676195447845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b91f2e020b6d%3A0xbb5ed9832febd211!2sHM%20Siddique%20Mansion!5e0!3m2!1sen!2sbd!4v1647714933210!5m2!1sen!2sbd"
-                         class="map"></iframe>
+                        class="map"></iframe>
                 </div>
             </div>
         </div>
@@ -395,6 +450,8 @@
 
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
